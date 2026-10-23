@@ -1,0 +1,4 @@
+sources:
+  "1.0.8":
+    url: "https://github.com/amnezia-vpn/libagw/archive/refs/tags/v1.0.8.zip"
+    sha256: "ad36125be7ff4a77603107a0bc2194da6778d5612e649f53c9d954c742bb70db"

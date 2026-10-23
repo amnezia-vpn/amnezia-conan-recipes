@@ -1,0 +1,8 @@
+sources:
+  "202603162227":
+    "geoip.dat":
+      url: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202603162227/geoip.dat"
+      sha256: "e48b925d985d7bf33cfee76f309241af0f1779699963b69363dec2c4740041d1"
+    "geosite.dat":
+      url: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/download/202603162227/geosite.dat"
+      sha256: "a2f83e25b8be3f089cfdd9423fc7b6eda5a0d4060919917902711d65acac1e0c"
