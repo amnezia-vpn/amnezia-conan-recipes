@@ -8,6 +8,7 @@ import os
 class Golang(ConanFile):
     name = "go"
     settings = "os", "arch"
+    package_type = "application"
 
     @property
     def _sources(self):
@@ -33,4 +34,7 @@ class Golang(ConanFile):
         copy(self, "*", src=os.path.join(self.build_folder, "go"), dst=self.package_folder)
 
     def package_info(self):
+        self.cpp_info.set_property("cmake_target_name", "golang::go")
         self.cpp_info.bindirs = ["bin"]
+        self.cpp_info.exe = True
+        self.cpp_info.location = os.path.join("bin", "go")
