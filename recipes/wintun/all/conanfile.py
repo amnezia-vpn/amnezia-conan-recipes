@@ -8,6 +8,7 @@ import os
 class Wintun(ConanFile):
     name = "wintun"
     settings = "os", "arch"
+    package_type="shared-library"
 
     def layout(self):
         basic_layout(self)
@@ -38,6 +39,7 @@ class Wintun(ConanFile):
              keep_path=False)
 
     def package_info(self):
-        self.cpp_info.includedirs = ["include"]
-        self.cpp_info.bindirs = ["bin"]
         self.cpp_info.set_property("cmake_target_name", "amnezia::wintun")
+        self.cpp_info.type = "shared-library"
+        self.cpp_info.location = "bin/wintun.dll"
+        self.cpp_info.libs = ["wintun"]
